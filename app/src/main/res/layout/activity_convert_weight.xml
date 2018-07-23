@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ConvertWeightActivity">
+
+    <TextView
+        android:id="@+id/convertTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/textColorBackground"
+        android:padding="10dp"
+        android:text="Enter Value in kg"
+        android:textColor="@color/textColor" />
+
+    <EditText
+        android:id="@+id/valueEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertTextView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/textColorBackground"
+        android:hint="Enter Value"
+        android:padding="10dp"
+        android:textColor="@color/textColor" />
+
+    <Button
+
+        android:id="@+id/convertPoundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valueEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/textColorBackground"
+        android:padding="10dp"
+        android:text="Convert in Pound"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/outputPoundTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertPoundButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/textColorBackground"
+        android:padding="10dp"
+        android:text="output of value in Pound"
+        android:textColor="@color/textColor" />
+
+    <Button
+        android:id="@+id/convertGramButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputPoundTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/textColorBackground"
+        android:padding="10dp"
+        android:text="Convert in Gram"
+        android:textColor="@color/textColor" />
+
+    <TextView
+        android:id="@+id/outputGramTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertGramButton"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        android:padding="10dp"
+        android:text="output of value in Gram"
+         />
+</RelativeLayout>

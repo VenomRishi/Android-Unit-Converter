@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ConvertVolumeActivity">
+
+    <TextView
+        android:id="@+id/convertTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Value in Litre"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"/>
+
+    <EditText
+        android:id="@+id/valueEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertTextView"
+        android:hint="Enter Value"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+
+    <Button
+        android:id="@+id/convertMilliLitreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/valueEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Convert in MilliLitre"
+        android:layout_marginTop="10dp"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/outputMilliLitreTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertMilliLitreButton"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="output of value in Milli Litre"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+
+    <Button
+        android:id="@+id/convertCubicMeterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outputMilliLitreTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Convert in Cubic Meter"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+
+    <TextView
+        android:id="@+id/outputCubicMeterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertCubicMeterButton"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="output of value in Cubic Meter"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+</RelativeLayout>

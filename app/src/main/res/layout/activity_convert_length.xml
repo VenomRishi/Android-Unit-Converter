@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ConvertLengthActivity">
+
+    <TextView
+        android:id="@+id/convertTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Enter Value in Km"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+    <EditText
+        android:id="@+id/valueEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertTextView"
+        android:hint="Enter Value"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+    <Button
+        android:id="@+id/convertMeterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/valueEditText"
+        android:layout_centerHorizontal="true"
+        android:text="Convert in Meter"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+    <TextView
+        android:id="@+id/outputMeterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertMeterButton"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="output of value in Meter"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Convert in Centi Meter"
+        android:id="@+id/convertCentimeterButton"
+        android:layout_below="@id/outputMeterTextView"
+        android:layout_centerHorizontal="true"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+    <TextView
+        android:id="@+id/outputCentimeterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convertCentimeterButton"
+        android:padding="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="output of value in Centi Meter"
+        android:background="@color/textColorBackground"
+        android:textColor="@color/textColor"
+        />
+</RelativeLayout>
